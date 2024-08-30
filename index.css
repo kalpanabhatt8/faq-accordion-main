@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+@font-face {
+    font-family: "Work Sans";
+    src: url('assets/fonts/static/WorkSans-Regular.ttf')format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url('assets/fonts/static/WorkSans-Bold.ttf')format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url('assets/fonts/static/WorkSans-semi-bold.ttf')format('truetype');
+    font-weight: 600;
+    font-style: semi-bold;
+}
+
+body{
+  height: 98vh;
+  font-family: "Work Sans", sans-serif !important;
+
+}
+p{
+    margin-top:0.5rem
+}
+h2{
+    font-size: 16px;
+    font-weight: semi-bold;
+}
+
+.image-div{
+    height: 80vh;
+}
+img{
+    width: 100%;
+    /* min-height: 40vh; */
+    min-height: 40%;
+    object-fit: cover;
+}
+
+.image-section{
+    position: relative;
+    height: 100vh;
+ 
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container{
+    align-items: baseline;
+    display:flex;
+    flex-direction: column;
+    gap: 0rem;
+    width: 70vw;
+    height: fit-content;
+    background-color: white;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.heading{
+    display: flex;
+    gap: 8px;
+    font-size:32px;
+    align-items: center;
+}
+
+.question-div{
+    padding: 16px 4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FAEEFF;
+}
+
+.faq-div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.faq-div>div:last-child>div>p{
+  margin-top: 0.5rem;
+  
+}
+.qa-div{
+    width: 100%;
+}
+.hide{
+    display: none;
+}
+button{
+    padding: 0px;
+    border: 0px;
+    background-color:transparent;
+}
+
+.question-div{
+    display: grid;
+    grid-template-columns: auto 40px;
+}
+
+.question-div>h2:hover{
+    color:#AD28EB;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.attribution{
+   padding-top: 1rem;
+}
+
+@media screen and (min-width:768px){
+    .container{
+        width:34rem;
+    }
+
+    .heading{
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+    .image-div{
+        height: 40vh;
+    }
+}

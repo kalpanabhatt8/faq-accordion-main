@@ -27,7 +27,8 @@
 }
 
 body{
-  height: 98vh;
+  height: 100vh;
+  background-color: #F9EEFF;
   font-family: "Work Sans", sans-serif !important;
 
 }

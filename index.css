@@ -147,5 +147,6 @@ button:hover{
     }
     .image-div{
         height: 40vh;
+        overflow: hidden;
     }
 }
